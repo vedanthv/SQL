@@ -1,7 +1,7 @@
 # 🚀SQL Commands
 Collection of SQL commands and theory for DBMS Course at University
 
-## SQL Commands are mainly classified into four categories : 
+## Categories of SQL Commands 
 - DDL : Data Definition Language
 - DQL - Data Query Language
 - DML - Data Manipulation Language
