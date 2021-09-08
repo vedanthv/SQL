@@ -22,4 +22,11 @@ Collection of SQL commands and theory for DBMS Course at University
       <br>Similarly multiple columns can be added
 ### 🚀Modifying Tables
 - 📚**ALTER table table_name MODIFY column_name1 new_column_definition;** <br> Multiple columns can be modified in the same manner
-### 🚀
+### 🚀Drop Column in Table
+- 📚**ALTER TABLE table_name DROP COLUMN column_name;**
+### 🚀Rename Column in Table
+- **ALTER TABLE table_name DROP COLUMN column_name;**
+### 🚀Drop the Table
+- **DROP TABLE table_name;**
+### 🚀Drop Multiple Tables
+- **DROP TABLE table_name1, tablename2;**
