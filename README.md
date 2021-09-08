@@ -17,4 +17,9 @@ Collection of SQL commands and theory for DBMS Course at University
 - 📚**USE dbname;**
 ### 🚀Creating a Table
 - 📚**CREATE table tablename(columnname1 datatype(dtype size), columename2 datatype(dtype size));**
-
+### 🚀Alter Tables!
+- 📚**ALTER table table_name add new_column_name column_definition first/after column_name;** ⚠
+      <br>Similarly multiple columns can be added
+### 🚀Modifying Tables
+- 📚**ALTER table table_name MODIFY column_name1 new_column_definition;** <br> Multiple columns can be modified in the same manner
+### 🚀
