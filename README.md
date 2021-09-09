@@ -12,23 +12,23 @@ Collection of SQL commands and theory for DBMS Course at University
 
 ## 👩‍💻Data Definition Commands
 ### 🚀Creating a Database
-- 📚**CREATE DATABASE dbname**;
+- 📚CREATE DATABASE dbname;
 ### 🚀Using a Database
-- 📚**USE dbname;**
+- 📚USE dbname;
 ### 🚀Creating a Table
-- 📚**CREATE table tablename(columnname1 datatype(dtype size), columename2 datatype(dtype size));**
+- 📚CREATE table tablename(columnname1 datatype(dtype size), columename2 datatype(dtype size));
 ### 🚀Alter Tables!
-- 📚**ALTER table table_name add new_column_name column_definition first/after column_name;** ⚠
+- 📚ALTER table table_name add new_column_name column_definition first/after column_name; 
       <br>Similarly multiple columns can be added
 ### 🚀Modifying Tables
-- 📚**ALTER table table_name MODIFY column_name1 new_column_definition;** <br> Multiple columns can be modified in the same manner
+- 📚ALTER table table_name MODIFY column_name1 new_column_definition;<br> Multiple columns can be modified in the same manner
 ### 🚀Drop Column in Table
-- 📚**ALTER TABLE table_name DROP COLUMN column_name;**
+- 📚ALTER TABLE table_name DROP COLUMN column_name;
 ### 🚀Rename Column in Table
--  📚**ALTER TABLE table_name RENAME COLUMN old_name TO new_name;**
+-  📚ALTER TABLE table_name RENAME COLUMN old_name TO new_name;
 ### 🚀Rename Table
-- 📚**RENAME TABLE old_table TO new_table;**
+- 📚RENAME TABLE old_table TO new_table;
 ### 🚀Drop the Table
-- **📚DROP TABLE table_name;**
+- 📚DROP TABLE table_name;
 ### 🚀Drop Multiple Tables
-- **📚DROP TABLE table_name1, tablename2;**
+- 📚DROP TABLE table_name1, tablename2;
