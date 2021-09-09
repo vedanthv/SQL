@@ -29,6 +29,6 @@ Collection of SQL commands and theory for DBMS Course at University
 ### 🚀Rename Table
 - 📚**RENAME TABLE old_table TO new_table;**
 ### 🚀Drop the Table
-- **DROP TABLE table_name;**
+- **📚DROP TABLE table_name;**
 ### 🚀Drop Multiple Tables
-- **DROP TABLE table_name1, tablename2;**
+- **📚DROP TABLE table_name1, tablename2;**
