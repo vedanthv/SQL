@@ -26,7 +26,7 @@ Collection of SQL commands and theory for DBMS Course at University
 - 📚**ALTER TABLE table_name DROP COLUMN column_name;**
 ### 🚀Rename Column in Table
 -  📚**ALTER TABLE table_name RENAME COLUMN old_name TO new_name;**
-### 🚀Rename Column in Table
+### 🚀Rename Table
 - 📚**RENAME TABLE old_table TO new_table;**
 ### 🚀Drop the Table
 - **DROP TABLE table_name;**
