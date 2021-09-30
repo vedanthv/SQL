@@ -100,3 +100,28 @@ SELECT name FROM world
 SELECT name FROM world
  WHERE name LIKE '____'
  ```
+11. The capital of Luxembourg is Luxembourg. Show all the countries where the capital is the same as the name of the country
+Find the country where the name is the capital city.
+
+```sql
+SELECT name
+  FROM world
+ WHERE name=capital
+ ```
+
+12. Find the country where the capital is the country plus "City".[TRICKY]
+
+```sql
+SELECT name
+  FROM world
+ WHERE capital = concat(name, ' City');
+ ```
+
+13. Find the capital and the name where the capital includes the name of the country.
+**Tricky ATM will come back to it later!**
+
+14. Find the capital and the name where the capital is an extension of name of the country.
+**Tricky ATM will come back to it later!**
+
+15. Show the name and the extension where the capital is an extension of name of the country.
+**Tricky ATM will come back to it later!**
