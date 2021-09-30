@@ -18,69 +18,60 @@ Which countries are not too small and not too big? BETWEEN allows range checking
 `SELECT name, area FROM world
   WHERE area BETWEEN 200000 AND 250000`
   
- ### Quiz 1 : 
+ ### Quiz 1 [Link](https://sqlzoo.net/wiki/SELECT_Quiz)
  
-### 1.
-![image](https://user-images.githubusercontent.com/44313631/135419849-d40a3297-d196-4ca8-8503-2c96967e5ad6.png)
-
-#### Query : 
-`SELECT name, population
-  FROM world
- WHERE population BETWEEN 1000000 AND 1250000`
- 
+# 2. SELECT FROM WORLD
 <hr>
 
-### 2. Pick the result you would obtain from this code:
-      `SELECT name, population
-      FROM world
-      WHERE name LIKE "Al%"`
-      
- #### Answer : 
+### Sample Select Statement
 
-![image](https://user-images.githubusercontent.com/44313631/135420222-606a75bb-4988-4be5-bee8-5b3f8922e558.png)
+`SELECT name, continent, population FROM world`
 
-<hr>
-  
-### 3.  Select the code which shows the countries that end in A or L
+### Large Countries
 
 `SELECT name FROM world
- WHERE name LIKE '%a' OR name LIKE '%l'`
- 
-<hr>
+WHERE population > 200000000`
 
-### 4. Pick the result from the query
+### per capita gdp
 
-`SELECT name,length(name)
-FROM world
-WHERE length(name)=5 and region='Europe'`
+Give the name and the per capita GDP for those countries with a population of at least 200 million.
 
-#### Answer : 
+`SELECT name, gdp/population
+FROM world 
+WHERE population > 200000000`
 
-![image](https://user-images.githubusercontent.com/44313631/135420566-9700ea12-43a5-4233-82c8-2a36a24602ad.png)
+### South America In millions
 
-<hr>
+Show the name and population in millions for the countries of the continent 'South America'. Divide the population by 1000000 to get population in millions.
 
-### 5.
+`select name, population/1000000
+from world 
+where continent = 'South America'`
 
-![image](https://user-images.githubusercontent.com/44313631/135420668-bd96c366-0c6f-41b8-9608-d87be6b986b3.png)
+### France, Germany, Italy
 
-#### Answer : 
+`select name,population 
+from world
+where name in ('France','Germany','Italy')`
 
-![image](https://user-images.githubusercontent.com/44313631/135420791-a9bf3ad5-964f-43e2-84b2-62a0c45a5576.png)
+### United
 
-<hr>
+Show the countries which have a name that includes the word 'United'
 
-### 6. Select the code that would show the countries with an area larger than 50000 and a population smaller than 10000000
+`select name
+from world 
+where name like '%United%'`
 
-`SELECT name, area, population
-  FROM world
- WHERE area > 50000 AND population < 10000000`
- <hr>
- 
- ### 7. Select the code that shows the population density of China, Australia, Nigeria and France
+### Two ways to be big
 
-`SELECT name, population/area
-  FROM world
- WHERE name IN ('China', 'Nigeria', 'France', 'Australia')`
- 
- <hr>
+Two ways to be big: A country is big if it has an area of more than 3 million sq km or it has a population of more than 250 million.
+
+Show the countries that are big by area or big by population. Show name, population and area.
+
+`select name,population, area
+from world
+where area > 3000000 or population > 250000000`
+
+### One or the other (but not both)
+
+Exclusive OR (XOR). Show the countries that are big by area (more than 3 million) or big by population (more than 250 million) but not both. Show name, population and area.
