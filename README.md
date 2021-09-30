@@ -20,7 +20,7 @@ Which countries are not too small and not too big? BETWEEN allows range checking
   
  ### Quiz 1 [Link](https://sqlzoo.net/wiki/SELECT_Quiz)
  
-# 2. SELECT FROM WORLD
+## 2. SELECT FROM WORLD
 <hr>
 
 ### Sample Select Statement
@@ -140,4 +140,39 @@ AND name LIKE '%i%'
 AND name LIKE '%o%' 
 AND name LIKE '%u%' 
 AND name NOT LIKE '% %';
+```
+## 3. Pattern Matching Strings
+
+### Find the country that start with Y
+
+```
+SELECT name FROM world
+  WHERE name LIKE 'Y%'
+```
+
+### Find the country that end with Y
+
+```
+SELECT name FROM world
+  WHERE name LIKE '%Y'
+ ```
+### Luxembourg has an x - so does one other country. List them both.
+
+```
+SELECT name FROM world
+  WHERE name LIKE '%x%'
+```
+
+### Iceland, Switzerland end with land - but are there others?
+
+```
+SELECT name FROM world
+  WHERE name LIKE '%land'
+```
+
+### Columbia starts with a C and ends with ia - there are two more like this.
+
+```
+SELECT name FROM world
+  WHERE name LIKE 'C%' AND name LIKE '%ia'
 ```
