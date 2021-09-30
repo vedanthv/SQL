@@ -6,7 +6,7 @@ I've compiled the solutions to all of all 10 levels on the [SQL Zoo Tutoral](htt
 ## SELECT basics
 Simple queries to get started.
 
-1.Introducing the world table of countries
+1. Introducing the world table of countries
 
 ```sql
 SELECT population FROM world
