@@ -1,6 +1,6 @@
 # 🚀SQL Practice from SQLZoo
 
-I've compiled the solutions to all of all 10 levels on the [SQL Zoo Tutoral](http://sqlzoo.net/wiki/SQL_Tutorial).  
+I've compiled the solutions to all of all 10 levels on the [SQL Zoo Tutorial](http://sqlzoo.net/wiki/SQL_Tutorial).  
 
 
 ## SELECT basics
