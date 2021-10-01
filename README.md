@@ -194,3 +194,51 @@ select name, population, area
 from world
 where area > 3000000 xor population > 250000000
 ```
+9. Rounding
+For South America show population in millions and GDP in billions both to 2 decimal places.
+
+```sql
+select name, ROUND(population/1000000,2), ROUND(gdp/1000000000, 2)
+from world
+where continent = 'South America'
+```
+
+10. Trillion dollar economies[Important]
+Show the name and per-capita GDP for those countries with a GDP of at least one trillion (1000000000000; that is 12 zeros). Round this value to the nearest 1000.
+**Show per-capita GDP for the trillion dollar countries to the nearest $1000.**
+
+```sql
+SELECT name, ROUND(gdp/population, -3)
+FROM world
+WHERE gdp > 1000000000000;
+```
+
+11. Show the name and capital where the name and the capital have the same number of characters.
+
+```sql
+SELECT name, capital
+FROM world
+WHERE LENGTH(name) = LENGTH(capital)
+```
+
+12. Show the name and the capital where the first letters of each match. Don't include countries where the name and the capital are the same word.
+
+```sql
+SELECT name, capital
+FROM world
+WHERE LEFT(name,1) = LEFT(capital,1) 
+AND name != capital;
+```
+
+13. Find the country that has all the vowels and no spaces in its name.
+
+```sql
+SELECT name
+FROM world
+WHERE name LIKE '%a%' 
+AND name LIKE '%e%' 
+AND name LIKE '%i%' 
+AND name LIKE '%o%' 
+AND name LIKE '%u%' 
+AND name NOT LIKE '% %';
+```
