@@ -1,4 +1,4 @@
-# 🚀SQL Practice from SQLZoo
+# 🚀SQL Practice from SQLZoo and University Course Material
 
 I've compiled the solutions to all of all 10 levels on the [SQL Zoo Tutorial](http://sqlzoo.net/wiki/SQL_Tutorial).  
 
